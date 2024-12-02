@@ -70,12 +70,14 @@ body{
   text-align: center;
 }
 
+
 .info .title:hover{
   cursor: pointer;
   color: var(--Yellow);
 }
 
 .info time{
+  font-size: 14px;
   color: var(--Gray-950);
 }
 
