@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap");
+
+:root{
+--Yellow: hsl(47, 88%, 63%);
+
+--White: hsl(0, 0%, 100%);
+
+--Gray-500: hsl(0, 0%, 42%);
+--Gray-950: hsl(0, 0%, 7%);
+}
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Figtree;
+  background-color: hsl(47, 88%, 63%);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 384px;
+  max-height: 522px;
+  background-color: var(--White);
+  border: 1px solid black;
+  border-radius: 20px;
+  opacity: 100%;
+  box-shadow: 8px 8px 0px 0px black;
+  padding: 20px;
+  gap: 24px;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+}
+
+.image{
+  width: 336px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 194px;
+  width: 336px;
+}
+
+.info h3{
+  width: 98px;
+  font-weight: 800;
+  background-color: var(--Yellow);
+  border-radius: 4px;
+  padding: 4px;
+  text-align: center;
+}
+
+.info time{
+  color: var(--Gray-950);
+}
+
+p{
+  color: var(--Gray-500);
+  font-size: 16px;
+}
+
+.publisher-info{
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.publisher-info img{
+  width: 32px;
+  height: 32px;
+}
+
+.publisher-info span{
+  width: 129px;
+  color: var(--Gray-950);
+  font-weight:800;
+  font-size: 14px; 
+}
+
+.attribution{
+  position: fixed;
+  bottom: 30px;
+}
